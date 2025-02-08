@@ -1,0 +1,74 @@
+html, body {
+    height: 100%; /* Make the html and body take up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/backimg.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background static (not scroll with the page) */
+}
+h1 {
+    text-align: center;
+}
+
+#sort-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Slightly transparent white border */
+    color: #000; /* Black text */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Less transparent on hover */
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(223, 218, 218); 
+    margin: 10px 0; 
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    color: rgb(95, 95, 95); /* White text color */
+    transition: background-color 0.3s ease;
+}
+
+li a {
+    color: #2c2c2c; /* Yellow color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Less transparent on hover */
+}
